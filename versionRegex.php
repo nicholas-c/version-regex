@@ -9,7 +9,7 @@
 		 */
 
 		public static function validate($version) {
-			return preg_match('#^v?(\d+(?:\.(?:\d{1,3})){0,2})(-(?:pre|beta|b|RC|alpha|a|pl|p)(?:\.?(?:\d+))?)?$#i', $version);
+			return preg_match('#^v?(\d{1,3}+(?:\.(?:\d{1,3})){0,2})(-(?:pre|beta|b|RC|alpha|a|pl|p)(?:\.?(?:\d+))?)?$#i', $version);
 		}
 
 	}
